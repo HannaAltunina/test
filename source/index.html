@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up User Form</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+				<h1 class="header__title">Sign Up</h1>
+      </div>
+    </header>
+    <main class="main">
+        <h2 class="main__title main__title--form">New user?</h2>
+        <p class="main__description">Use the form below to create your account.</p>
+        <form class="main__user-form user-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="user-form__wrapper">
+              <p>
+                <label for="name-input" class="user-form__label">First Name</label>
+                <input class="user-form__input user-form__input--first-name" type="text" name="name" id="name-input" placeholder="Alice">
+              </p>
+              <p>
+                <label for="surname-input" class="user-form__label">Last Name</label>
+                <input class="user-form__input user-form__input--last-name" type="text" name="name" id="surname-input" placeholder="Miller">
+              </p>
+              <p>
+								<select class="user-form__select user-form__select--nationality">
+									<option class="user-form__option">American</option>
+									<option class="user-form__option">Russian</option>
+									<option class="user-form__option">Belarussian</option>
+									<option class="user-form__option">Italian</option>
+									<option class="user-form__option">Australian</option>
+							</select>
+              </p>
+              <p>
+                <label for="email-input" class="user-form__label">E-mail</label>
+                <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="alice.miller@yahoo.com">
+              </p>							
+							<fieldset class="user-form__fieldset user-form__fieldset--date-of-birth">
+								<legend class="user-form__legend">Date of Birth</legend>
+								<div>
+									<select class="user-form__select user-form__select--day">
+										<option class="user-form__option">1</option>
+										<option class="user-form__option">2</option>
+										<option class="user-form__option">3</option>
+										<option class="user-form__option">4</option>
+										<option class="user-form__option">5</option>
+										<option class="user-form__option">6</option>
+										<option class="user-form__option">7</option>
+										<option class="user-form__option">8</option>
+										<option class="user-form__option">9</option>
+										<option class="user-form__option">10</option>
+									</select>
+									<select class="user-form__select user-form__select--month">
+										<option class="user-form__option">January</option>
+										<option class="user-form__option">February</option>
+										<option class="user-form__option">March</option>
+										<option class="user-form__option">April</option>
+										<option class="user-form__option">May</option>
+										<option class="user-form__option">June</option>
+										<option class="user-form__option">July</option>
+										<option class="user-form__option">August</option>
+										<option class="user-form__option">September</option>
+										<option class="user-form__option">October</option>
+										<option class="user-form__option">November</option>
+										<option class="user-form__option">December</option>
+									</select>
+									<select class="user-form__select user-form__select--year">
+										<option class="user-form__option">2002</option>
+										<option class="user-form__option">2001</option>
+										<option class="user-form__option">2000</option>
+										<option class="user-form__option">1999</option>
+										<option class="user-form__option">1998</option>
+										<option class="user-form__option">1997</option>
+										<option class="user-form__option">1996</option>
+										<option class="user-form__option">1995</option>
+										<option class="user-form__option">1994</option>
+										<option class="user-form__option">1993</option>
+									</select>
+								</div>
+              </fieldset>
+
+
+              <fieldset class="user-form__fieldset user-form__fieldset--gender">
+                <legend class="user-form__legend">Gender</legend>
+                <ul class="user-form__list user-form__list--gender">
+                  <li class="user-form__item user-form__item--gender">
+                    <input class="user-form__input user-form__input--radio" type="radio" name="gender" id="male">
+                    <label for="male" class="user-form__label">Male</label>
+                  </li>
+                  <li class="user-form__item user-form__item--gender">
+                    <input class="user-form__input user-form__input--radio" type="radio" name="gender" id="female" checked>
+                    <label for="female" class="user-form__label">Female</label>
+                  </li>
+                </fieldset>
+								<p>
+									<label for="password-input" class="user-form__label">Password</label>
+									<input class="user-form__input user-form__input--password" type="password" name="password" id="password-input">
+								</p>
+								<p>
+									<label for="confirm-pass-input" class="user-form__label">Confirm Password</label>
+									<input class="user-form__input user-form__input--confirm-pass" type="password" name="confirm-pass" id="confirm-pass-input">
+								</p>
+          </div>
+          <div class="user-form__wrapper user-form__wrapper--button">
+            <p class="user-form__comment">Have an account? <a class="user-form__login-link">Login</a></p>
+            <button class="user-form__button site-button" type="submit">Complete Signup</button>
+          </div>
+        </form>
+    </main>
+  </body>
+</html>
